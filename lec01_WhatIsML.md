@@ -20,48 +20,51 @@
 
             ex) 시험성적 0~100 범위가 넓음
 
-                x(hours) | y(score)
-                ---------|---------
-                10 | 90
-                9 | 80
-                3 | 50
-                2 | 30
 
-                x=7이면 y는 얼마인가??
+            |x(hours) | y(score)|
+            |-------|---------|
+            |10|90|
+            |9|80|
+            |3|50|
+            |2|30|
+            
+              x=7이면 y는 얼마인가??
 
-        1. binary classification 
+        2. binary classification 
         패스하였나 안하였나 두가지로 나누어보자
 
             ex)
 
-                x(hours) | y(P/F)
-                ---------|---------
-                10 | P
-                9 | P
-                3 | F
-                2 | F
+            x(hours) | y(P/F)
+            ---------|---------
+            10 | P
+            9 | P
+            3 | F
+            2 | F
 
-                결과가 등급으로 나뉨-> classification
-                그중에서도 Pass/Fail 두가지로 나뉨 ->binary
+            결과가 등급으로 나뉨-> classification
 
-        1. multi-label classification
+            그중에서도 Pass/Fail 두가지로 나뉨 ->binary
+
+        3. multi-label classification
             
             ex) 학점 ABCDE 많다.
             
-                x(hours) | y(P/F)
-                ---------|---------
-                10 | A
-                9 | B
-                3 | D
-                2 | F
+            x(hours) | y(P/F)
+            ---------|---------
+            10 | A
+            9 | B
+            3 | D
+            2 | F
 
-                결과가 등급으로 나뉨-> classification
-                등급이 여러개 -> multi
+            결과가 등급으로 나뉨-> classification
+
+            등급이 여러개 -> multi
 
     2. ### *Unsupervised Learning: un-labeled data*
    
         ex) Google news grouping, Word clustering
         일일이 label을 줄수없다. 자동으로 뉴스들을 그루핑 유사한것들을 모음, 비슷한 단어들을 모음--> 데이터를 가지고 스스로 학습한다.
     
-    주로 *supervised learning* 을 다룬다. 데이터를 가지고 학습
+    ### *주로 *supervised learning* 을 다룬다. 데이터를 가지고 학습*
         
